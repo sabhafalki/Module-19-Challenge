@@ -1,20 +1,20 @@
 # Module-19-Challenge Neural_Network_Charity_Analysis
 # Overview of Project #
-The purpose of this Project is to create a report that includes which cryptocurrencies are on the trading market and how they could be grouped to create a classification system for this new investment, so that they can help the customers by offering a new cryptocurrency investment portfolio.The data need to be processed to fit the machine learning models by using unsupervised learning.To group the cryptocurrencies,clustering algorithm is used.
+The purpose of this Project is to deep-learning neural networks to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup. The Alphabet Soup  is a charitable foundation, through this analysis the foundation want to know which organization is worth donating and which are to high risk with help of the given data.
 
 The analysis consisted of the following:
-1. Preprocessing the Data for PCA.
-2. Reducing Data Dimensions Using PCA.
-3. Clustering Cryptocurrencies Using K-means.
-4. Visualizing Cryptocurrencies Results.
+1. Preprocessing the data for the neural network model.
+2. Compile, train and evaluate the model.
+3. Optimize the model.
+
 
 # Resources #
-Software: Jupyter Notebook <br>
-Libraries: numpy, pandas, plotly, scikit-learn,hvplot,<br>
-Data Sources: crypto_data.csv
+Software: Jupyter Notebook,Python 3.7.3, Anaconda 4.8.3, TensorFlow 2.3.1<br>
+Libraries: pandas, plotly, scikit-learn,hvplot,<br>
+Data Sources: charity_data.csv
 
 # Results #
-### Preprocessing the Data for PCAs ###
+### Preprocessing the Data ###
 - The **crypto_df** DataFrame, We perfrom certain steps to preprocessing the data.<br>
 
 ![crypto_df](/Image/crypto_df.png)<br>
