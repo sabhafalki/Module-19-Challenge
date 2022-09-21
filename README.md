@@ -21,9 +21,9 @@ Data Sources: charity_data.csv
 - Encoding of the categorical variables, spliting into training and testing datasets and standardization have been applied to the features.
 
 ### Compiling, Training, and Evaluating the Model ###
-- PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.<br>
-
-![PCA](/Image/PCA.png)
+- I selected 120 neurons with a sigmoid function for my first layer, 50 nuerons with a ReLU function for the second, and 18 neurons with for the third, and a sigmoid function for the outer layer. I chose to change the activation function for the first layer because it increased the model's performance.
+- I only achieved an accuracy of 69% and was not able to achieve the target model performance.
+- I tried to increase the model performance by dropping more columns, creating more bins for rare occurances in columns, decreasing the number of values in some bins, adding more neurons to the hidden layers, using a differnet activation function, and increasing the number of epochs.
 
 ### Summary ###
 - The deep learning neural network model did not reach the target of 75% accuracy. Considering that this target level is pretty average we could say that the model is not outperforming.
