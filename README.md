@@ -15,30 +15,16 @@ Data Sources: charity_data.csv
 
 # Results #
 ### Preprocessing the Data ###
-- The **crypto_df** DataFrame, We perfrom certain steps to preprocessing the data.<br>
+- The columns EIN and NAME are identification information and have been removed from the input data.
+- The column IS_SUCCESSFUL contains binary data refering to weither or not the charity donation was used effectively. This variable is then considered as the target for our deep learning neural network.
+- The following columns APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT are the features for our model.
+- Encoding of the categorical variables, spliting into training and testing datasets and standardization have been applied to the features.
 
-![crypto_df](/Image/crypto_df.png)<br>
-
-- After that, Standardize the data with StandardScaler() to removing the mean and scaling to unit variance.<br>
-
-![Standard](/Image/Standard.png)<br>
-
-### Reducing Data Dimensions Using PCA ###
+### Compiling, Training, and Evaluating the Model ###
 - PCA is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.<br>
 
 ![PCA](/Image/PCA.png)
 
-### Clustering Cryptocurrencies Using K-means ###
-- K-means is an unsupervised learning algorithm used to identify and solve clustering issues. Done creating a new **clustered_df** DataFrame.<br>
-
-![clustered_df](/Image/clustered_df.png)<br>
-
-- Elbow curve is used etermine optimal value of k.we conclude that the optimal number of clusters for the data is 4.<br>
-
-![Elbow](/Image/Elbow.png)<br>
-
-### Visualizing Cryptocurrencies Results ###
-- scatter_3d plots represents individual data in three-dimensional space.<br>
-
-![3D-Scatter](/Image/3D-Scatter.png)<br>
-
+### Summary ###
+- The deep learning neural network model did not reach the target of 75% accuracy. Considering that this target level is pretty average we could say that the model is not outperforming.
+- A random forest model could solve this classification problem by randomly sampling the preprocessed data and building several smaller, simpler decision trees. Some benefits of using a random forest model include how robust it is against overfitting of the data because all of the weak learners are trained on different pieces of the data, it can be used to rank the importance of input variables, it is robust to outliers and nonlinear data, and it can run efficiently on large datasets.
